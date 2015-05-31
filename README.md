@@ -28,6 +28,8 @@ npm start
 Tests
 -----
 
+You should add your tests in the `tests` folder.
+
 ```bash
 bin/phpunit
 ```
