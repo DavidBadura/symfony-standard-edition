@@ -19,6 +19,7 @@ Development
 -----------
 
 ```bash
+# shortcut to run gulp watch ;-)
 npm start
 ```
 
