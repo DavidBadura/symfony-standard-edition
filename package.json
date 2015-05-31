@@ -1,5 +1,9 @@
 {
-  "name": "puli-demo-application",
+  "name": "symfony-standard-edition",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/gulp",
+    "start": "./node_modules/.bin/gulp watch"
+  },
   "devDependencies": {
     "bootstrap-sass": "^3.3.4",
     "gulp": "^3.8.11",
