@@ -25,6 +25,13 @@ Development
 npm start
 ```
 
+Tests
+-----
+
+```bash
+bin/phpunit
+```
+
 Todo
 ----
 
