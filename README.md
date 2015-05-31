@@ -49,3 +49,4 @@ Todo
 ----
 
 * puli integration
+* move AppBundle from `src` into `app` folder
