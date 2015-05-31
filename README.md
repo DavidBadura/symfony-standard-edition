@@ -44,9 +44,3 @@ You should add your tests in the `tests` folder.
 ```bash
 bin/phpunit
 ```
-
-Todo
-----
-
-* puli integration
-* move AppBundle from `src` into `app` folder
