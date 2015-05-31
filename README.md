@@ -4,6 +4,7 @@ Standard Edtion
 Features
 --------
 
+* symfony3 structur (as far as known)
 * npm assets management
 * bootstrap3 framework
 
@@ -26,6 +27,5 @@ npm start
 Todo
 ----
 
-* new project structur (sf3)
 * doctrine migrations
 * puli integration
