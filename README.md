@@ -5,6 +5,7 @@ Features
 --------
 
 * symfony3 structur (as far as known)
+* doctrine2 migrations
 * npm assets management
 * bootstrap3 framework
 
@@ -27,5 +28,4 @@ npm start
 Todo
 ----
 
-* doctrine migrations
 * puli integration
