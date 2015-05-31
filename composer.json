@@ -61,7 +61,9 @@
     "symfony-bin-dir": "bin",
     "symfony-assets-install": "relative",
     "incenteev-parameters": {
-      "file": "app/config/parameters.yml"
+      "file": "app/config/parameters.yml",
+      "dist-file": "app/config/parameters.dist.yml",
+      "keep-outdated": true
     }
   }
 }
