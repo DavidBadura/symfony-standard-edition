@@ -17,8 +17,19 @@ composer install
 npm install
 ```
 
-Development
------------
+Run application
+---------------
+
+```bash
+bin/console server:run
+```
+
+Assets
+------
+
+Your assets should be in `assets` folder and gulp should copy (minified and concated) it to the web directory.
+By installation your assets automaticaly will copied in the web directory.
+If you in development, you can watch your assets with following command:
 
 ```bash
 # shortcut to run gulp watch ;-)
