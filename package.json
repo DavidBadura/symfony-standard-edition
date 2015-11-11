@@ -13,5 +13,8 @@
     "gulp-uglify": "^1.4.0",
     "jquery": "^2.1.4"
   },
+  "devDependencies": {
+    "browser-sync": "^2.10.0"
+  }
   "private": true
 }

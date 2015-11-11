@@ -1,7 +1,9 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     concat = require('gulp-concat'),
-    minifyCSS = require('gulp-minify-css');
+    minifyCSS = require('gulp-minify-css'),
+    browserSync = require('browser-sync').create()
+    ;
 
 gulp.task('default', ['css', 'js', 'fonts']);
 
@@ -10,7 +12,8 @@ gulp.task('css', function () {
         .pipe(concat('style.scss'))
         .pipe(sass({includePaths: ['node_modules/bootstrap-sass/assets/stylesheets/'], errLogToConsole: true}))
         .pipe(minifyCSS())
-        .pipe(gulp.dest('web/css/'));
+        .pipe(gulp.dest('web/css/'))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('js', function () {
@@ -20,7 +23,8 @@ gulp.task('js', function () {
         'assets/js/script.js'
     ])
         .pipe(concat('script.js'))
-        .pipe(gulp.dest('web/js/'));
+        .pipe(gulp.dest('web/js/'))
+        .pipe(browserSync.stream());
 
     // copy jquery.min.map
     gulp.src('node_modules/jquery/dist/jquery.min.map')
@@ -33,6 +37,11 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('watch', ['default'], function () {
+    browserSync.init({
+        proxy: 'localhost'
+    });
+
     gulp.watch('assets/scss/*.scss', ['css']);
     gulp.watch('assets/js/*.js', ['js']);
+    gulp.watch('src/**/*.html.twig').on('change', browserSync.reload);
 });
