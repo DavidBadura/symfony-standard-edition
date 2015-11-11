@@ -5,7 +5,8 @@
   "autoload": {
     "psr-4": {
       "": "src/"
-    }
+    },
+    "files": [ "app/AppKernel.php" ]
   },
   "autoload-dev": {
     "psr-4": {
